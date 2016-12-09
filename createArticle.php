@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FollowMe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+<link rel="stylesheet" href="css/quill.snow.css">
+<script src="js/quill.js"> </script>
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div id="MyNavbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="http://localhost/FollowMe/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+<li><a href="http://localhost/FollowMe/login.html">SignIn</a></li>
+<li><a href="http://localhost/FollowMe/signup.html">SignUp</a></li>
+</ul>
+
+
+<ul id="MyNavbar" class="nav navbar-nav navbar-right">
+<li><a href="Developers.com"><i class="fa fa-code" aria-hidden="true"></i> Developers</a></li>
+<li><a href="HugsBugs"><i class="fa fa-support" aria-hidden="true"></i> Hugs &amp; Bugs</a></li>
+<li><a href="Contact.com"><i class="fa fa-envelope-open" aria-hidden="true"></i> Contact</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+
+<header class="jumbotron">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-5"><br /><br />
+<img src="images/TitleIcon.png" height="60px" alt="FollowMe" />
+</div>
+<div class="col-xs-12 col-sm-7">
+<h1>FollowMe</h1>
+</div>
+</div>
+</div>
+</header>
+
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-6 col-sm-push-3">
+<div id="editor">
+  <p>Hello World!</p>
+  <p>Some initial <strong>bold</strong> text</p>
+  <p><br></p>
+</div>
+</div>
+</div>
+</div>
+
+
+<script>
+  var quill = new Quill('#editor', {
+    theme: 'snow'
+  });
+</script>
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'> </script>
+<script src='js/bootstrap.min.js'> </script>
+</body>
+</html>

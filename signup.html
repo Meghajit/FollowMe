@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>FollowMe</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+</head>
+<body>
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+<div class="container">
+
+<div class="navbar-header">
+<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#MyNavbar">
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+<span class="icon-bar"></span>
+</button>
+</div>
+
+
+<div id="MyNavbar" class="navbar-collapse collapse">
+<ul class="nav navbar-nav">
+<li class="active"><a href="http://localhost/FollowMe/index.html"><i class="fa fa-home" aria-hidden="true"></i> Home</a></li>
+<li><a href="http://localhost/FollowMe/login.html">LogIn</a></li>
+</ul>
+
+
+<ul id="MyNavbar" class="nav navbar-nav navbar-right">
+<li><a href="Developers.com"><i class="fa fa-code" aria-hidden="true"></i> Developers</a></li>
+<li><a href="HugsBugs"><i class="fa fa-support" aria-hidden="true"></i> Hugs &amp; Bugs</a></li>
+<li><a href="Contact.com"><i class="fa fa-envelope-open" aria-hidden="true"></i> Contact</a></li>
+</ul>
+</div>
+
+</div>
+</nav>
+
+
+<header class="jumbotron">
+<div class="container">
+<div class="row">
+<div class="col-xs-12 col-sm-4"><br /><br />
+<img src="images/TitleIcon.png" height="60px" alt="FollowMe" />
+</div>
+<div class="col-xs-12 col-sm-8">
+<h1>FollowMe</h1>
+</div>
+</div>
+</div>
+</header>
+
+<form class="form-horizontal" role="form" action="http://localhost/FollowMe/signupSave.php" method="POST">
+<center><h3>SignUp</h3></center>
+<div class="form-group">
+<label for="fname" class="col-sm-3 control-label">First Name</label>
+<div class="col-sm-7">
+<input type="text" class="form-control" autofocus required id="fname" name="fname" />
+</div>
+</div>
+
+<div class="form-group">
+<label for="lname" class="col-sm-3 control-label">Last Name</label>
+<div class="col-sm-7">
+<input type="text" class="form-control" autofocus required id="lname" name="lname" />
+</div>
+</div>
+
+<div class="form-group">
+<label for="bdate" class="col-sm-3 control-label">Birth date</label>
+<div class="col-sm-7">
+<input type="date" class="form-control" autofocus required id="bdate" name="bdate" />
+</div>
+</div>
+
+<div class="form-group">
+<label for="sex" class="col-sm-3 col-sm-push-2 radio-inline"><strong>Sex</strong></label>
+ <div class="col-sm-4">
+ <input type="radio" name="sex" id="sex" value="male" />  Male
+ </div>
+ <div class="col-sm-5 col-sm-pull-3">
+<label class="radio-inline"><input type="radio" name="sex" value="female" id="sex" />Female</label>
+</div>
+</div>
+
+
+<div class="form-group">
+<label for="profess" class="col-sm-3 control-label">Profession</label>
+<div class="col-sm-7">
+<select class="form-control" name="profession" id="profess">
+<option value="Student">Student</option>
+<option value="Undergraduate">Undergraduate</option>
+<option value="Corporate">Corporate Professional</option>
+<option value="Others">Others</option>
+</select>
+</div>
+</div>
+
+<div class="form-group">
+<label for="email" class="col-sm-3 control-label">Email</label>
+<div class="col-sm-7">
+<input type="text" class="form-control" autofocus required id="email" name="email" />
+</div>
+</div>
+
+<div class="form-group">
+<label for="phno" class="col-sm-3 control-label">Mobile Number</label>
+<div class="col-sm-7">
+<input type="number" class="form-control" autofocus required id="phno" name="phno" />
+</div>
+</div>
+
+<div class="form-group">
+<label for="passwd" class="col-sm-3 control-label">Password</label>
+<div class="col-sm-7">
+<input type="password" class="form-control" autofocus required id="passwd" name="passwd" />
+</div>
+</div>
+<center><h5>(Password should be of minimum 6 characters and should contain atleast 2 alpha numeric digits.)</h5></center>
+
+<div class="form-group">
+<div class="col-sm-6 col-sm-push-5">
+<button type="submit" class="btn btn-primary">SignUp</button>
+</div>
+</div>
+<center><h5>By signing up, you agree to abide by FollowMe rules and regulations and give consent to FollowMe to access and store your articles.)</h5></center>
+
+</form>
+
+
+
+
+
+
+
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'> </script>
+<script src='js/bootstrap.min.js'> </script>
+</body>
+</html>
